@@ -1,0 +1,15 @@
+job-searcher:
+  integration:
+    api:
+      base-url: https://test.swipejobs.com/api
+      paths:
+        jobs: /jobs
+        workers: /workers
+  business:
+    max-jobs: 3
+  cache:
+    type: MEMORY
+
+server:
+  error:
+      include-message: always
